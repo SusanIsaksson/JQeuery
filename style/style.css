@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellow;
+}
+.buttonRed {
+    background-color: red;
+}
+
+.buttonGreen {
+    background-color: green;
+}
+
+.buttonBlue {
+    background-color: blue;
+}
+
+.buttonBlack {
+    background-color: black;
+}
