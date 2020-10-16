@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+   
+</head>
+<body>
+    <h1 id="h1">Hello</h1>
+    <p id="p1">World</p>
+    <div>
+        <p id="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt eveniet quas quis quos voluptatibus omnis aliquid cumque, ullam at dolor error. Tenetur harum fugit voluptatibus accusantium magni rem corrupti vero.</p>
+    </div>
+    <div>
+        <button id="button" onclick="myFunction">Hide</button>
+    </div>
+    <div>
+        <button id="butt2" onclick="myFunction">Action</button>
+    </div>
+    <div>
+        <div>
+            <a href="#val1">Val 1</a>
+        </div>
+        <div>
+            <a href="#val2">Val 2</a>
+        </div>
+        <div>
+            <a href="#val3">Val 3</a>
+        </div>
+    </div>
+    <div>
+        <div id="val1">Detta är div 1/Val 1</div>
+    </div>
+    <div>
+        <div id="val2">Detta är div 2/val 2</div>
+    </div>
+    <div>
+        <div id="val3">Detta är div 3/val 3</div>
+    </div>
+</body>
+
+<script src="/javaScript/jquery-3.5.1.js"></script>
+
+
+
+<script>
+    $(document).ready(function() {
+
+       $("#lorem").hide(300) .show(300);
+       $("button").click(function(){
+           $("#h1").toggle(1000);
+
+        $("butt2").click(function() {
+            $("#p1").fadeIn(200) .fadeOut(400);
+        })
+           $("#butt2").slideToggle(2000);
+       });
+
+        
+    });
+</script>
+</html>
+
+<!-- //Funktioner i JQuery 
+.hide(200);
+.show(1000);
+.slideUp(100);
+.slideDown(1000);
+.delay(1000);
+.toggle(100);
+.css({color:"red", fontweight:"bold"})
+
+-->
